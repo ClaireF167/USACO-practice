@@ -19,6 +19,8 @@ int dfs(int v){
 }
 
 int main() {
+	freopen ("moocast.in","r",stdin);
+    freopen ("moocast.out","w",stdout);
 	int n, x, y, p;
     cin >> n;
     vector<Cow> temp(n);
@@ -36,7 +38,7 @@ int main() {
         }
     }
 
-//???
+//calculate max path
     int maxcount = 1;
     for (int i = 0; i < n; i++){
         for(int j = 0; j < n; j++){
